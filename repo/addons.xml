@@ -2,14 +2,14 @@
 <addons>
 <addon id="plugin.video.Real.stream"
        name="Real Stream"
-       version="0.2.0"
+       version="0.2.1"
        provider-name="Netai">
 
 <requires>
 	<import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.urlresolver" optional="true" version="2.2.0"/>
-	<import addon="plugin.program.real.stream.fav" optional="true" version="1.0.0"/>
-	<import addon="plugin.program.videoteca" optional="true" version="0.0.1"/>
+	<import addon="script.module.urlresolver"  version="2.2.0"/>
+	<import addon="plugin.program.real.stream.fav"  version="1.0.0"/>
+	<import addon="plugin.program.videoteca"  version="0.0.1"/>
 </requires>
  <extension point="xbmc.python.pluginsource"
             library="run.py">
