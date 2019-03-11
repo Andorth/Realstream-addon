@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.real.stream.fav" name="Real Stream Favoritos" version="1.0.1" provider-name="spoyser - Modify by Netai">
+<addon id="plugin.program.real.stream.fav" name="Real Stream Favoritos" version="1.0.1" provider-name="spoyser/Netai">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.metahandler" optional="true" />
