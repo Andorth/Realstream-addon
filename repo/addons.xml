@@ -7,11 +7,10 @@
 
 <requires>
 	<import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.urlresolver" version="2.2.0"/>
-	<import addon="plugin.program.real.stream.fav" version="1.0.0"/>
-	<import addon="plugin.program.videoteca" version="0.0.1"/>
-	<import addon="metadata.common.fanart.tv" optional="true"/>
-    <import addon="script.module.echo"/ optional="true"/>
+    <import addon="plugin.program.real.stream.fav" optional="true" version="1.0.0"/>
+	<import addon="plugin.program.videoteca" optional="true" version="0.0.1"/>
+    <import addon="script.module.echo" optional="true"/>
+	<import addon="script.module.urlresolver" optional="true"/>
 </requires>
 
 <extension point="xbmc.python.pluginsource"
@@ -39,5 +38,75 @@
         <disclaimer>Este addon es gratuito, no pagues por el.</disclaimer>
         <platform>all</platform>
     </extension>
+</addon>
+
+<addon id="script.extendedinfo" name="ExtendedInfo Script" version="5.6.0" provider-name="phil65 (Philipp Temminghoff)">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="resource.images.studios.white" version="0.0.5"/>
+		<import addon="script.module.kodi65" version="1.0.0"/>
+		<import addon="script.module.routing" version="0.1.0"/>
+		<!-- 		<import addon="script.module.buggalo" version="1.1.6"/>-->
+	</requires>
+	<extension point="xbmc.python.script" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.python.pluginsource" library="plugin.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<language/>
+		<summary lang="en">ExtendedInfo Script</summary>
+		<description lang="en">This script offers various possibilities to display online content inside skins as well as a complete MovieDB browser including info dialogs for various media types. Used services are themoviedb.org, theaudiodb.org, Trakt.TV, omdbapi.com and a lot more. Needs skin implementation for lot of functions.</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=160558</forum>
+		<source>https://github.com/phil65/script.extendedinfo</source>
+		<email>phil65@kodi.tv</email>
+		<news>Fix support for Kodi L* nightlies[CR]Browser window improvements[CR]Fixes for TADB/LastFM</news>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshot-03.jpg</screenshot>
+			<screenshot>resources/screenshot-04.jpg</screenshot>
+			<screenshot>resources/screenshot-05.jpg</screenshot>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="script.module.echo" name="Echo Libraries" version="1.00.003" provider-name="Echo Coder">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.requests" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Forked from TK Norris Shared Module. Reusable Modules used by several of Echo's addons</summary>
+	</extension>
+</addon>
+
+<addon id="script.module.urlresolver" name="URLResolver" version="5.0.24" provider-name="tvaddons">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="plugin.video.youtube" optional="true" />
+		<import addon="script.module.python.twitch" optional="true" />
+		<import addon="script.module.cryptopy" version="1.2.6" optional="true" />
+		<import addon="plugin.video.gdrive" optional="true" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.python.pluginsource" library="lib/default.py" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+		<summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
+		<summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
+		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+		<description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
+		<forum>https://www.tvaddons.co/forums</forum>
+        <website>https://www.tvaddons.co</website>
+	</extension>
 </addon>
 </addons>
