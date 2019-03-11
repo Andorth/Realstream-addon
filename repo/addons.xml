@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.Real.stream"
+       name="Real Stream"
+       version="0.2.0"
+       provider-name="Netai">
+
+<requires>
+	<import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.urlresolver" version="2.2.0"/>
+	<import addon="plugin.program.real.stream.fav" version="1.0.0"/>
+	<import addon="plugin.program.videoteca" version="0.0.1"/>
+	<import addon="metadata.common.fanart.tv" optional="true"/>
+    <import addon="script.module.echo"/ optional="true"/>
+</requires>
+
+<extension point="xbmc.python.pluginsource"
+            library="run.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="es">Libreria de tus peliculas.</summary>
+    <language>es</language>
+    <description lang="es">Libreria de peliculas de la nube en tu Kodi.</description>
+     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="repository.Realstream" name="[COLOR orange]Realstream[/COLOR] Repo" version="1.2.1" provider-name="Netai">
+
+    <extension point="xbmc.addon.repository" name="Realstream-repo">
+		<info></info>
+		<checksum></checksum>
+		<datadir zip="true"></datadir>
+	</extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Repositorio Real Stream</summary>
+        <description>Soporte del addon Real Stream.</description>
+        <disclaimer>Este addon es gratuito, no pagues por el.</disclaimer>
+        <platform>all</platform>
+    </extension>
+</addon>
+</addons>
