@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.program.favoritos-realstream" name="[COLOR gold]Real Stream[/COLOR] Favoritos" version="1.0.3" provider-name="spoyser-netai">
+<addon id="plugin.program.favoritos-realstream" name="[COLOR gold]Real Stream[/COLOR] Favoritos" version="1.0.5" provider-name="spoyser-netai">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.metahandler" optional="true" />
@@ -34,7 +34,7 @@
 
 <addon id="plugin.video.Real.stream"
        name="Real Stream"
-       version="0.2.4"
+       version="0.2.5"
        provider-name="Netai">
 
 <requires>
