@@ -34,12 +34,13 @@
 
 <addon id="plugin.video.Real.stream"
        name="Real Stream"
-       version="0.2.3"
+       version="0.2.4"
        provider-name="Netai">
 
 <requires>
 	<import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.urlresolver"  version="2.2.0"/>
+	<import addon="plugin.program.favoritos-realstream" version="1.0.2"/>
 </requires>
  <extension point="xbmc.python.pluginsource"
             library="run.py">
