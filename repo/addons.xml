@@ -34,7 +34,7 @@
 
 <addon id="plugin.video.Real-4k.pro"
        name="[COLOR fuchsia]Real 4k Pro[/COLOR]"
-       version="0.0.5"
+       version="0.0.8"
        provider-name="Netai">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -68,9 +68,9 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.Real-torrent.pro"
-       name="[COLOR pink]Real Torrent Pro[/COLOR]"
-       version="0.0.1"
+<addon id="plugin.video.Real-4k.pro"
+       name="[COLOR fuchsia]Real 4k Pro[/COLOR]"
+       version="0.0.6"
        provider-name="Netai">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -86,7 +86,6 @@
 	<import addon="script.module.simplejson" />
     <import addon="script.module.livestreamer" optional="true"/>
     <import addon="script.module.pyamf" optional="true"/>
-	<import addon="plugin.video.torrentin" version="0.6.2" optional="true"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
@@ -95,16 +94,19 @@
 
 
   <extension point="xbmc.addon.metadata">
-    <summary>Libreria torrents dependencia del addon Real Stream.</summary>
-    <description>para reproducir enlaces torrents publicos de internet.
+    <summary>Real 4k pro</summary>
+    <description>Libreria de Streaming que permite ver videos 4k.
 	</description>
     <platform>all</platform>
+	  <assets>
+		<icon>icon.png</icon>
+	  </assets>
   </extension>
 </addon>
 
 <addon id="plugin.video.Real.stream"
        name="[COLOR orange]Real Stream[/COLOR]"
-       version="0.3.1"
+       version="0.3.2"
        provider-name="Netai">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -112,6 +114,8 @@
 	<import addon="plugin.program.favoritos-realstream" version="1.0.2"/>
     <import addon="script.module.urlresolver" optional="true"/>
     <import addon="script.extendedinfo" optional="true"/>
+	<import addon="plugin.video.Real-torrent.pro" version="0.0.6"/>
+	<import addon="plugin.video.Real-4k.pro" version="0.0.8"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="run.py">
     <provides>video</provides>
