@@ -68,8 +68,8 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.Real-4k.pro"
-       name="[COLOR fuchsia]Real 4k Pro[/COLOR]"
+<addon id="plugin.video.Real-torrent.pro"
+       name="[COLOR pink]Real Torrent Pro[/COLOR]"
        version="0.0.6"
        provider-name="Netai">
   <requires>
@@ -86,6 +86,7 @@
 	<import addon="script.module.simplejson" />
     <import addon="script.module.livestreamer" optional="true"/>
     <import addon="script.module.pyamf" optional="true"/>
+	<import addon="plugin.video.torrentin" version="0.6.2" optional="true"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
@@ -94,13 +95,10 @@
 
 
   <extension point="xbmc.addon.metadata">
-    <summary>Real 4k pro</summary>
-    <description>Libreria de Streaming que permite ver videos 4k.
+    <summary>Libreria torrents dependencia del addon Real Stream.</summary>
+    <description>para reproducir enlaces torrents publicos de internet.
 	</description>
     <platform>all</platform>
-	  <assets>
-		<icon>icon.png</icon>
-	  </assets>
   </extension>
 </addon>
 
