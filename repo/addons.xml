@@ -104,7 +104,7 @@
 
 <addon id="plugin.video.Real.stream"
        name="[COLOR orange]Real Stream[/COLOR]"
-       version="0.2.8"
+       version="0.3.0"
        provider-name="Netai">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -112,17 +112,10 @@
 	<import addon="plugin.program.favoritos-realstream" version="1.0.2"/>
     <import addon="script.module.urlresolver" optional="true"/>
     <import addon="script.extendedinfo" optional="true"/>
-	<import addon="plugin.video.Real-4k.pro" optional="true"/>
-	<import addon="plugin.video.Real-torrent.pro" optional="true"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="run.py">
     <provides>video</provides>
   </extension>
-      <extension point="xbmc.addon.repository" name="Realstream-repo">
-		<info>https://raw.githubusercontent.com/Andorth/Realstream-addon/master/repo/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/Andorth/Realstream-addon/master/repo/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/Andorth/Realstream-addon/master/repo/</datadir>
-	</extension>
     <extension point="xbmc.addon.repository" name="Realstream-repo">
 		<info>https://raw.githubusercontent.com/Andorth/Realstream-addon/master/repo/addons.xml</info>
 		<checksum>https://raw.githubusercontent.com/Andorth/Realstream-addon/master/repo/addons.xml.md5</checksum>
@@ -131,10 +124,7 @@
   <extension point="xbmc.addon.metadata">
     <summary lang="es">Libreria de tus peliculas.</summary>
     <language>es</language>
-    <description lang="es">Libreria de peliculas de la nube en tu Kodi.
-	Ver 0.29 beta: Agregadas librerias resolver que reproducen 4k, agregadas librerias que soiportan Torrent.
-	Autoupdate desde el propio Addon.
-	</description>
+    <description lang="es">Libreria de peliculas de la nube en tu Kodi.</description>
      <platform>all</platform>
   </extension>
 </addon>
