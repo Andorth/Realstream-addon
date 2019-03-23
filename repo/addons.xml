@@ -70,7 +70,7 @@
 
 <addon id="plugin.video.Real-torrent.pro"
        name="[COLOR pink]Real Torrent Pro[/COLOR]"
-       version="0.0.7"
+       version="0.0.8"
        provider-name="Netai">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -86,7 +86,16 @@
 	<import addon="script.module.simplejson" />
     <import addon="script.module.livestreamer" optional="true"/>
     <import addon="script.module.pyamf" optional="true"/>
-  </requires>
+	<import addon="plugin.video.torrenter" name="Torrenter" version="2.6.6b" provider-name="inpos">
+	<import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.libtorrent"/>
+    <import addon="script.module.torrent.ts"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.torrent2http"/>
+    <import addon="script.module.pyrrent2http"/>
+    <import addon="script.module.chardet" />
+    <import addon="script.module.pyxbmct"/>
+    </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
   </extension>
@@ -201,7 +210,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<addon id="script.extendedinfo" name="ExtendedInfo Script" version="5.6.0" provider-name="phil65 (Philipp Temminghoff)">
+<addon id="script.extendedinfo" name="ExtendedInfo Script" version="5.6.1" provider-name="phil65 (Philipp Temminghoff)">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="resource.images.studios.white" version="0.0.5"/>
@@ -219,6 +228,8 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 		<language/>
 		<summary lang="en">ExtendedInfo Script</summary>
 		<description lang="en">This script offers various possibilities to display online content inside skins as well as a complete MovieDB browser including info dialogs for various media types. Used services are themoviedb.org, theaudiodb.org, Trakt.TV, omdbapi.com and a lot more. Needs skin implementation for lot of functions.</description>
+		<summary lang="es">ExtendedInfo Script</summary>
+		<description lang="es">Este script ofrece varias posibilidades para poder mostrar información online dentro de una piel, así como un completo navegador de TheMovieDB, incluidos los cuadros de diálogo de información para diversos tipos de medios. Los servicios usados son themoviedb.org, theaudiodb.org, Trakt.TV, omdbapi.com y mucho más. Necesita la implementación en el skin para muchas de sus funciones.</description>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
 		<forum>http://forum.kodi.tv/showthread.php?tid=160558</forum>
