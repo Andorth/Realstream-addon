@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.Real-torrent.pro"
        name="[COLOR pink]Real Torrent Pro[/COLOR]"
-       version="0.0.8"
+       version="0.0.9"
        provider-name="Netai">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -13,19 +13,12 @@
     <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
     <import addon="script.module.youtube.dl" optional="true"/>
     <import addon="plugin.video.youtube" />
-    <import addon="script.module.urlresolver" />
 	<import addon="script.module.simplejson" />
     <import addon="script.module.livestreamer" optional="true"/>
     <import addon="script.module.pyamf" optional="true"/>
-	<import addon="plugin.video.torrenter" name="Torrenter" version="2.6.6b" provider-name="inpos">
+	<import addon="plugin.video.torrenter" name="Torrenter" optional="true"/>
 	<import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.libtorrent"/>
-    <import addon="script.module.torrent.ts"/>
-    <import addon="script.module.requests"/>
-    <import addon="script.module.torrent2http"/>
-    <import addon="script.module.pyrrent2http"/>
-    <import addon="script.module.chardet" />
-    <import addon="script.module.pyxbmct"/>
+   
     </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
