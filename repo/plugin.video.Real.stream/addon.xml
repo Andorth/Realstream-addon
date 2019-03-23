@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.Real.stream"
        name="[COLOR orange]Real Stream[/COLOR]"
-       version="0.3.3"
+       version="0.3.5"
        provider-name="Netai">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -12,6 +12,9 @@
 	<import addon="plugin.video.Real-torrent.pro" version="0.0.6"/>
 	<import addon="plugin.video.Real-4k.pro" version="0.0.8"/>
 	<import addon="plugin.video.torrentin" version="0.6.2"/>
+	<import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" />
+	
   </requires>
   <extension point="xbmc.python.pluginsource" library="run.py">
     <provides>video</provides>
