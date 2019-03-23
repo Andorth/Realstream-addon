@@ -1,115 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.program.favoritos-realstream" name="[COLOR pink]Favoritos[/COLOR] [COLOR gold]Real Stream[/COLOR]" version="1.0.5" provider-name="spoyser">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.metahandler" optional="true" />
-  </requires>
-
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
-  </extension>
-
-  <extension point="xbmc.service" library="service.py" start="startup" />
-
-  <extension point="xbmc.addon.metadata">
-    <summary lang="es"></summary>
-    <description lang="en">Addon Super favorites modificado para su uso con Real Stream addon. Ten clasificadas sus peliculas creando acceso directo a la misma para luego poderla reproducir. Agradecimentos a los creadores del Programa Addon Super Favorites.</description>
-    <platform>all</platform>
-    <language>en</language>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-
-    <website></website>
-    <source></source>
-    <email></email>
-  </extension>
-
-  <extension point="kodi.context.item" library="capture.py">
-      <item>
-        <label>30000</label>
-        <visible>true</visible>
-      </item>
-    </extension>
-</addon>
-
-<addon id="plugin.video.Real-4k.pro"
-       name="[COLOR fuchsia]Real 4k Pro[/COLOR]"
-       version="0.0.8"
-       provider-name="Netai">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" />
-    <import addon="script.module.urlresolver" />
-	<import addon="script.module.simplejson" />
-    <import addon="script.module.livestreamer" optional="true"/>
-    <import addon="script.module.pyamf" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-
-
-
-  <extension point="xbmc.addon.metadata">
-    <summary>Real 4k pro</summary>
-    <description>Libreria de Streaming que permite ver videos 4k.
-	</description>
-    <platform>all</platform>
-	  <assets>
-		<icon>icon.png</icon>
-	  </assets>
-  </extension>
-</addon>
-
-<addon id="plugin.video.Real-torrent.pro"
-       name="[COLOR pink]Real Torrent Pro[/COLOR]"
-       version="0.0.8"
-       provider-name="Netai">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" />
-    <import addon="script.module.urlresolver" />
-	<import addon="script.module.simplejson" />
-    <import addon="script.module.livestreamer" optional="true"/>
-    <import addon="script.module.pyamf" optional="true"/>
-	<import addon="plugin.video.torrenter" name="Torrenter" version="2.6.6b" provider-name="inpos">
-	<import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.libtorrent"/>
-    <import addon="script.module.torrent.ts"/>
-    <import addon="script.module.requests"/>
-    <import addon="script.module.torrent2http"/>
-    <import addon="script.module.pyrrent2http"/>
-    <import addon="script.module.chardet" />
-    <import addon="script.module.pyxbmct"/>
-    </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-
-
-
-  <extension point="xbmc.addon.metadata">
-    <summary>Libreria torrents dependencia del addon Real Stream.</summary>
-    <description>para reproducir enlaces torrents publicos de internet.
-	</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="plugin.video.Real.stream"
        name="[COLOR orange]Real Stream[/COLOR]"
        version="0.3.5"
@@ -138,7 +28,7 @@
   </extension>
 </addon>
 
-<addon id="repository.Realstream" name="[COLOR orange]Realstream[/COLOR] Repo" version="1.2.4" provider-name="Netai">
+<addon id="repository.Realstream" name="[COLOR orange]Realstream[/COLOR] Repo" version="1.3.0" provider-name="Netai">
 
     <extension point="xbmc.addon.repository" name="Realstream-repo">
 		<info>https://raw.githubusercontent.com/Andorth/Realstream-addon/master/repo/addons.xml</info>
