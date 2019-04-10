@@ -52,7 +52,7 @@
   <extension point="xbmc.addon.metadata">
     <summary lang="es">Libreria de tus peliculas.</summary>
     <language>es</language>
-    <description lang="es">Visiona peliculas procedentes de internet en tu dispositivo. Este script no aloja contenido protegido en su interior. Es totalmente gratuito. Si quieres ayudarnos aporta tu granito de arena a una ONG española o de tu pais.</description>
+    <description lang="es">Visiona peliculas procedentes de internet en tu dispositivo. Este script no aloja contenido protegido en su interior. Es totalmente gratuito.</description>
      <platform>all</platform>
   </extension>
 </addon>
