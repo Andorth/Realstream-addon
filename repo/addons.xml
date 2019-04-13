@@ -34,7 +34,7 @@
 
 <addon id="plugin.video.Real.stream"
        name="[COLOR pink]Real Stream[/COLOR]"
-       version="0.4.5"
+       version="0.4.6"
        provider-name="Netai">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -42,6 +42,7 @@
 	<import addon="plugin.program.favoritos-realstream" version="1.0.2"/>
     <import addon="script.module.urlresolver" optional="true"/>
     <import addon="script.extendedinfo" optional="true"/>
+	<import addon="script.mantenimiento" optional="true"/>
 	<import addon="script.module.youtube.dl" optional="true"/>
     <import addon="plugin.video.youtube" />
 
@@ -134,5 +135,28 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 			<screenshot>resources/screenshot-05.jpg</screenshot>
 		</assets>
 	</extension>
+</addon>
+
+<addon id="script.mantenimiento"
+       name="Mantenimiento de Kodi"
+       version="0.0.2"
+       provider-name="SchisM/Netai">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+ 	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>executable</provides>
+	</extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Mantenimiento</summary>
+    <description>Manten limpio tu media center</description>
+    <language></language>
+    <license></license>
+    <source></source>
+    <forum></forum>
+    <website></website>
+  </extension>
 </addon>
 </addons>
