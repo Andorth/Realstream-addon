@@ -58,33 +58,6 @@
     </extension>
 </addon>
 
-<addon id="plugin.program.NotBuffer3" name="[COLOR orange] NotBuffer 3 [/COLOR]" version="5.0.2" provider-name="Netai">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-</requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.service" library="startup.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-  <summary>NotBuffer 3</summary>
-  <description>Configura el buffer y limpia tu Kodi.</description>
-
-
-	  <platform>all</platform>
-	  <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-
-    </assets>
-    <license>GNU/GPL - v2</license>
-
-    <website>web</website>
-    <email>my@email.com</email>
-    <source>https://</source>
-  </extension>
-</addon>
-
 <addon id="plugin.program.NotBuffer4" name="[COLOR orange] NotBuffer 4 [/COLOR]" version="1.1" provider-name="Netai">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -109,27 +82,6 @@
     <website>web</website>
     <email>netaiaddons@gmail.com</email>
     <source>https://netai.eu/netai</source>
-  </extension>
-</addon>
-
-<addon id="plugin.video.Explora"
-       name="Explora"
-       version="1.3.1"
-       provider-name="Netai">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" optional="true" />
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="es">Documentales</summary>
-    <language>es</language>
-    <description lang="es">Todos los documentales en castellano, la videoteca que no deja de crecer ! ... Este addon requiere de plugin f4mTester de shani para funcionar.</description>
-     <platform>all</platform>
   </extension>
 </addon>
 
@@ -278,47 +230,5 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
     <forum></forum>
     <website></website>
   </extension>
-</addon>
-
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.31" provider-name="jsergio">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="plugin.video.youtube" optional="true" />
-		<import addon="script.module.python.twitch" optional="true" />
-		<import addon="script.module.cryptopy" version="1.2.6" optional="true" />
-		<import addon="plugin.video.gdrive" optional="true" />
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.python.pluginsource" library="lib/default.py" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
-		<summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
-		<summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
-		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
-		<description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
-	</extension>
-</addon>
-
-<addon id="script.module.urlresolver" name="URLResolver" version="5.0.36" provider-name="tvaddons">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="plugin.video.youtube" optional="true" />
-		<import addon="script.module.python.twitch" optional="true" />
-		<import addon="script.module.cryptopy" version="1.2.6" optional="true" />
-		<import addon="plugin.video.gdrive" optional="true" />
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.python.pluginsource" library="lib/default.py" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
-		<summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
-		<summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
-		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
-		<description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
-		<forum>https://www.tvaddons.co/forums</forum>
-        <website>https://www.tvaddons.co</website>
-	</extension>
 </addon>
 </addons>
