@@ -87,14 +87,14 @@
 
 <addon id="plugin.video.Real.stream"
        name="[COLOR fuchsia]Real Stream[/COLOR]"
-       version="0.5.3"
+       version="0.5.4"
        provider-name="Netai">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.simple.downloader" version="1.9.5"/>
 	<import addon="plugin.program.favoritos-realstream" version="1.0.2"/>
-    <import addon="script.module.urlresolver" version="5.0.36"/>
-	<import addon="script.module.resolveurl" version="5.0.31"/>
+    <import addon="script.module.urlresolver" version="5.0.0"/>
+	<import addon="script.module.resolveurl" version="5.0.0"/>
     <import addon="script.extendedinfo" optional="true"/>
 	<import addon="script.mantenimiento" optional="true"/>
     <import addon="plugin.video.youtube" />
