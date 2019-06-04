@@ -1,5 +1,123 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="plugin.program.advancedsettings"
+       name="Easy Advanced Settings"
+       version="0.8.9"
+       provider-name="kinkin">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource"
+               	library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>Create, view, edit and delete your advancedsettings.xml file in a user-friendly gui</summary>
+        <description>All settings follow the xbmc.org wiki[CR][CR]With this tool you can create your advanced settings directly from XBMC[CR][CR]If you don't know what a setting does, don't enable it!</description>
+        <platform>all</platform>
+        <language>en</language>
+        <license>GNU GENERAL PUBLIC LICENSE</license>
+        <forum></forum>
+        <website></website>
+        <source></source>
+        <email></email>
+    </extension>
+
+</addon>
+
+<addon id="plugin.program.favoritos-realstream" name="[COLOR pink]Favoritos[/COLOR] [COLOR gold]Real Stream[/COLOR]" version="1.0.5" provider-name="spoyser">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.metahandler" optional="true" />
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+
+  <extension point="xbmc.service" library="service.py" start="startup" />
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="es"></summary>
+    <description lang="en">Addon Super favorites modificado para su uso con Real Stream addon. Ten clasificadas sus peliculas creando acceso directo a la misma para luego poderla reproducir. Agradecimentos a los creadores del Programa Addon Super Favorites.</description>
+    <platform>all</platform>
+    <language>en</language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+
+    <website></website>
+    <source></source>
+    <email></email>
+  </extension>
+
+  <extension point="kodi.context.item" library="capture.py">
+      <item>
+        <label>30000</label>
+        <visible>true</visible>
+      </item>
+    </extension>
+</addon>
+
+<addon id="plugin.program.NotBuffer4" name="[COLOR orange] NotBuffer 4 [/COLOR]" version="1.6" provider-name="Netai">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="plugin.program.advancedsettings" version="0.8.9"/>
+</requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+  <summary>NotBuffer 4</summary>
+
+  <description>
+  Configura el buffer y limpia tu Kodi.
+   + Incluidos ajustes de buffer antiguos.
+   + Incluidos ajustes de buffer optimizados para equipos viejos.
+   + incluido settins para Kodi 16,17,18.
+   + Reparado el test de velocidad de OOKLA.
+   + Agregados creditos al Autor de ADVSET - Chemai.
+   + Suprimidas Utilidades obsoletas.
+  </description>
+	  <platform>all</platform>
+	  <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+
+    </assets>
+    <license>GNU/GPL - v3</license>
+
+    <website>web</website>
+    <email>netaiaddons@gmail.com</email>
+    <source>https://netai.eu/netai</source>
+  </extension>
+</addon>
+
+<addon id="plugin.video.Real.stream"
+       name="[COLOR fuchsia]Real Stream[/COLOR]"
+       version="0.5.5"
+       provider-name="Netai">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="plugin.program.favoritos-realstream" version="1.0.2"/>
+    <import addon="script.module.urlresolver"  version="5.0.33"/>
+	<import addon="script.module.resolveurl"  version="5.0.27"/>
+    <import addon="script.extendedinfo" optional="5.6.0"/>
+    <import addon="plugin.video.youtube" />
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="run.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="es">Realstream</summary>
+    <language>es</language>
+    <description lang="es">>Tu libreria de peliculas online.
+	</description>
+     <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="repository.Netai" name="[COLOR red]Netai[/COLOR] Repo" version="1.2.0" provider-name="Netai">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
@@ -17,7 +135,7 @@
     </extension>
 </addon>
 
-<addon id="repository.Realstream" name="[COLOR orange]Realstream[/COLOR] Repo" version="1.2.4" provider-name="Netai">
+<addon id="repository.Realstream" name="[COLOR orange]Realstream[/COLOR] Repo" version="1.2.5" provider-name="Netai">
 
     <extension point="xbmc.addon.repository" name="Realstream-repo">
 		<info>https://raw.githubusercontent.com/Andorth/Realstream-addon/master/repo/addons.xml</info>
@@ -30,5 +148,111 @@
         <disclaimer>Este addon es gratuito, no pagues por el.</disclaimer>
         <platform>all</platform>
     </extension>
+</addon>
+
+<addon id="repository.xbmchub" name="TVADDONS.CO Add-on Repository" version="3.0.0" provider-name="tvaddons">
+	<extension point="xbmc.addon.repository" name="TVADDONS.CO Add-on Repository">
+	<dir>
+		<info compressed="false">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml</info>
+		<checksum>https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/</datadir>
+	</dir>
+
+    <dir>
+		<info compressed="false">https://github.com/tvaddonsco/tva-release-repo/raw/master/addons.xml</info>
+		<checksum>https://github.com/tvaddonsco/tva-release-repo/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/tvaddonsco/tva-release-repo/raw/master/</datadir>
+    </dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Unofficial Kodi Addons from TVADDONS.CO</summary>
+		<description>Unofficial Kodi Addons from the TVADDONS.CO Add-on Repository. Please visit www.tvaddons.co for support!
+
+Kodi is a registered trademark of the XBMC Foundation. We are not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</description>
+         <disclaimer>TVADDONS.CO did not make all the add-ons in this repository and is not responsible for their content.</disclaimer>
+		<platform>all</platform>
+                <forum>https://www.tvaddons.co/forums</forum>
+                <website>https://www.tvaddons.co</website>
+	</extension>
+</addon>
+
+<addon id="script.extendedinfo" name="ExtendedInfo Script" version="5.6.1" provider-name="phil65 (Philipp Temminghoff)">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="resource.images.studios.white" version="0.0.5"/>
+		<import addon="script.module.kodi65" version="1.0.0"/>
+		<import addon="script.module.routing" version="0.1.0"/>
+		<!-- 		<import addon="script.module.buggalo" version="1.1.6"/>-->
+	</requires>
+	<extension point="xbmc.python.script" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.python.pluginsource" library="plugin.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<language/>
+		<summary lang="en">ExtendedInfo Script</summary>
+		<description lang="en">This script offers various possibilities to display online content inside skins as well as a complete MovieDB browser including info dialogs for various media types. Used services are themoviedb.org, theaudiodb.org, Trakt.TV, omdbapi.com and a lot more. Needs skin implementation for lot of functions.</description>
+		<summary lang="es">ExtendedInfo Script</summary>
+		<description lang="es">Este script ofrece varias posibilidades para poder mostrar información online dentro de una piel, así como un completo navegador de TheMovieDB, incluidos los cuadros de diálogo de información para diversos tipos de medios. Los servicios usados son themoviedb.org, theaudiodb.org, Trakt.TV, omdbapi.com y mucho más. Necesita la implementación en el skin para muchas de sus funciones.</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=160558</forum>
+		<source>https://github.com/phil65/script.extendedinfo</source>
+		<email>phil65@kodi.tv</email>
+		<news>Fix support for Kodi L* nightlies[CR]Browser window improvements[CR]Fixes for TADB/LastFM</news>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshot-03.jpg</screenshot>
+			<screenshot>resources/screenshot-04.jpg</screenshot>
+			<screenshot>resources/screenshot-05.jpg</screenshot>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.31" provider-name="jsergio">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="plugin.video.youtube" optional="true" />
+		<import addon="script.module.python.twitch" optional="true" />
+		<import addon="script.module.cryptopy" version="1.2.6" optional="true" />
+		<import addon="plugin.video.gdrive" optional="true" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.python.pluginsource" library="lib/default.py" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+		<summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
+		<summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
+		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+		<description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
+	</extension>
+</addon>
+
+<addon id="script.module.urlresolver" name="URLResolver" version="5.0.36" provider-name="tvaddons">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="plugin.video.youtube" optional="true" />
+		<import addon="script.module.python.twitch" optional="true" />
+		<import addon="script.module.cryptopy" version="1.2.6" optional="true" />
+		<import addon="plugin.video.gdrive" optional="true" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.python.pluginsource" library="lib/default.py" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+		<summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
+		<summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
+		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+		<description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
+		<forum>https://www.tvaddons.co/forums</forum>
+        <website>https://www.tvaddons.co</website>
+	</extension>
 </addon>
 </addons>
