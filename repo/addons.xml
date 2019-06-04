@@ -1,47 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.program.favoritos-realstream" name="[COLOR pink]Favoritos[/COLOR] [COLOR gold]Real Stream[/COLOR]" version="1.0.5" provider-name="spoyser">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.metahandler" optional="true" />
-  </requires>
-
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
-  </extension>
-
-  <extension point="xbmc.service" library="service.py" start="startup" />
-
-  <extension point="xbmc.addon.metadata">
-    <summary lang="es"></summary>
-    <description lang="en">Addon Super favorites modificado para su uso con Real Stream addon. Ten clasificadas sus peliculas creando acceso directo a la misma para luego poderla reproducir. Agradecimentos a los creadores del Programa Addon Super Favorites.</description>
-    <platform>all</platform>
-    <language>en</language>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-
-    <website></website>
-    <source></source>
-    <email></email>
-  </extension>
-
-  <extension point="kodi.context.item" library="capture.py">
-      <item>
-        <label>30000</label>
-        <visible>true</visible>
-      </item>
-    </extension>
-</addon>
-
 <addon id="plugin.video.Real.stream"
        name="[COLOR fuchsia]Real Stream[/COLOR]"
        version="0.5.5"
        provider-name="Netai">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.simple.downloader" version="1.9.5"/>
 	<import addon="plugin.program.favoritos-realstream" version="1.0.2"/>
-    <import addon="script.module.urlresolver"  version="5.0.33"/>
-	<import addon="script.module.resolveurl"  version="5.0.27"/>
-    <import addon="script.extendedinfo" optional="5.6.0"/>
+    <import addon="script.module.urlresolver" version="5.0.0"/>
+	<import addon="script.module.resolveurl" version="5.0.0"/>
+    <import addon="script.extendedinfo" optional="true"/>
+	<import addon="script.mantenimiento" optional="true"/>
     <import addon="plugin.video.youtube" />
 
   </requires>
@@ -49,9 +19,11 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="es">Realstream</summary>
+    <summary lang="es">Libreria de tus peliculas.</summary>
     <language>es</language>
-    <description lang="es">>Tu libreria de peliculas online.
+    <description lang="es">Visiona peliculas procedentes de internet en tu dispositivo. Este script no aloja contenido protegido en su interior. Es totalmente gratuito.
+	Cambios en esta version: Se ha adaptado el script dependencia ResolveURL de Jsergio. Se han eliminado categorias redundantes. Ahora se puede hacer busquedas por años, director, actor o servidor.
+	Agregado apartado de videotutoriales.
 	</description>
      <platform>all</platform>
   </extension>
@@ -108,44 +80,6 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 		<platform>all</platform>
                 <forum>https://www.tvaddons.co/forums</forum>
                 <website>https://www.tvaddons.co</website>
-	</extension>
-</addon>
-
-<addon id="script.extendedinfo" name="ExtendedInfo Script" version="5.6.1" provider-name="phil65 (Philipp Temminghoff)">
-	<requires>
-		<import addon="xbmc.python" version="2.25.0"/>
-		<import addon="resource.images.studios.white" version="0.0.5"/>
-		<import addon="script.module.kodi65" version="1.0.0"/>
-		<import addon="script.module.routing" version="0.1.0"/>
-		<!-- 		<import addon="script.module.buggalo" version="1.1.6"/>-->
-	</requires>
-	<extension point="xbmc.python.script" library="default.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.python.pluginsource" library="plugin.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<language/>
-		<summary lang="en">ExtendedInfo Script</summary>
-		<description lang="en">This script offers various possibilities to display online content inside skins as well as a complete MovieDB browser including info dialogs for various media types. Used services are themoviedb.org, theaudiodb.org, Trakt.TV, omdbapi.com and a lot more. Needs skin implementation for lot of functions.</description>
-		<summary lang="es">ExtendedInfo Script</summary>
-		<description lang="es">Este script ofrece varias posibilidades para poder mostrar información online dentro de una piel, así como un completo navegador de TheMovieDB, incluidos los cuadros de diálogo de información para diversos tipos de medios. Los servicios usados son themoviedb.org, theaudiodb.org, Trakt.TV, omdbapi.com y mucho más. Necesita la implementación en el skin para muchas de sus funciones.</description>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
-		<forum>http://forum.kodi.tv/showthread.php?tid=160558</forum>
-		<source>https://github.com/phil65/script.extendedinfo</source>
-		<email>phil65@kodi.tv</email>
-		<news>Fix support for Kodi L* nightlies[CR]Browser window improvements[CR]Fixes for TADB/LastFM</news>
-		<assets>
-			<icon>resources/icon.png</icon>
-			<fanart>resources/fanart.jpg</fanart>
-			<screenshot>resources/screenshot-01.jpg</screenshot>
-			<screenshot>resources/screenshot-02.jpg</screenshot>
-			<screenshot>resources/screenshot-03.jpg</screenshot>
-			<screenshot>resources/screenshot-04.jpg</screenshot>
-			<screenshot>resources/screenshot-05.jpg</screenshot>
-		</assets>
 	</extension>
 </addon>
 </addons>
