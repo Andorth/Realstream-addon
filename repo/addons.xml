@@ -95,7 +95,7 @@
 	<import addon="plugin.program.favoritos-realstream" version="1.0.2"/>
     <import addon="script.module.urlresolver"  version="5.0.33"/>
 	<import addon="script.module.resolveurl"  version="5.0.27"/>
-    <import addon="script.extendedinfo" optional="5.6.1"/>
+    <import addon="script.extendedinfo" optional="5.6.0"/>
 	<import addon="script.mantenimiento" optional="true"/>
     <import addon="plugin.video.youtube" />
 
@@ -106,11 +106,8 @@
   <extension point="xbmc.addon.metadata">
     <summary lang="es">Realstream</summary>
     <language>es</language>
-    <description lang="es">Visiona peliculas procedentes de internet en tu dispositivo. Este script no aloja contenido protegido en su interior. Es totalmente gratuito.
-	Cambios en esta version: Se ha adaptado el script dependencia ResolveURL de Jsergio. Se han eliminado categorias redundantes. Ahora se puede hacer busquedas por años, director, actor o servidor.
-	Agregado apartado de videotutoriales.
-
-	Version 0.5.5:
+    <description lang="es"> Cambios:
+	Version 0.5.5
 	Reparada la integracion con la videoteca Netai.
 	Integracion total del Script ResolveURL de Jsergio
 	Agregada Nuevos iconos en el menu.
@@ -118,7 +115,6 @@
 	Eliminadas categorias no necesarias en el menú de peliculas.
 	Modificacion de settings y notificaciones.
 	Ahora mostrara un aviso con la cantidad de tiempo permitida en el servidor.
-
 	</description>
      <platform>all</platform>
   </extension>
@@ -218,28 +214,5 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 			<screenshot>resources/screenshot-05.jpg</screenshot>
 		</assets>
 	</extension>
-</addon>
-
-<addon id="script.mantenimiento"
-       name="Mantenimiento de Kodi"
-       version="0.0.2"
-       provider-name="SchisM/Netai">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
- 	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>executable</provides>
-	</extension>
-  <extension point="xbmc.service" library="service.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary>Mantenimiento</summary>
-    <description>Manten limpio tu media center</description>
-    <language></language>
-    <license></license>
-    <source></source>
-    <forum></forum>
-    <website></website>
-  </extension>
 </addon>
 </addons>
