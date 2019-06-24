@@ -1,29 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.Real.stream"
        name="[COLOR fuchsia]Real Stream[/COLOR]"
-       version="0.7.1"
+       version="0.7.2"
        provider-name="Netai">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.simple.downloader" version="1.9.5"/>
-	<import addon="plugin.program.favoritos-realstream" version="1.0.2"/>
     <import addon="script.module.urlresolver" version="5.0.0"/>
 	<import addon="script.module.resolveurl" version="5.0.0"/>
     <import addon="script.extendedinfo" optional="true"/>
-	<import addon="script.mantenimiento" optional="true"/>
     <import addon="plugin.video.youtube" />
 	
   </requires>
+    <news>
+	[COLOR orange]
+	Cambios en esta version:
+	[/COLOR]
+	[COLOR gold]
+	-Agregado nuevos iconos en el menu, y en las categorias. Ahora pueden ser cambiados
+	desde ajustes del addon.
+	-Agregado enlace que abre el explorador de tu mediacenter a una web Proxy gratuita.
+	esta opcion permite ajustar tu kodi via proxy. De esta forma resetear la limitacion
+	de dos horas en el servidor Real.
+	[/COLOR]
+    </news>
   <extension point="xbmc.python.pluginsource" library="run.py">
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="es">Libreria de tus peliculas.</summary>
-    <language>es</language>
-    <description lang="es">Visiona peliculas procedentes de internet en tu dispositivo. Este script no aloja contenido protegido en su interior. Es totalmente gratuito.
-	Cambios en esta version: Se ha adaptado el script dependencia ResolveURL de Jsergio. Se han eliminado categorias redundantes. Ahora se puede hacer busquedas por años, director, actor o servidor.
-	Agregado apartado de videotutoriales.
-	</description>
-     <platform>all</platform>
+  <description lang="es">Navega con Kodi por páginas web para ver videos de manera fácil. Desde servidores publicos, gratuitos.</description>
+  <summary lang="en">Browse web pages using Kodi</summary>
+  <description lang="en">Browse web pages using Kodi, you can easily watch their video content.</description>
+  <disclaimer>
+  [COLOR red]Los propietarios y remitentes de este complemento no alojan ni distribuyen ninguno de los contenidos mostrados por estos complementos ni tienen ninguna afiliación con los proveedores de contenido.[/COLOR]
+  [COLOR red]The owners and submitters to this addon do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.[/COLOR]</disclaimer>
+  <platform>all</platform>
+  <license>GNU GPL v3</license>
+  <platform>all</platform>
   </extension>
 </addon>
