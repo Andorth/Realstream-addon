@@ -28,9 +28,8 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-  <description lang="es">Navega con Kodi por páginas web para ver videos de manera fácil. Desde servidores publicos, gratuitos.</description>
-  <summary lang="en">Browse web pages using Kodi</summary>
-  <description lang="en">Browse web pages using Kodi, you can easily watch their video content.</description>
+  <summary lang="es">Realstream</summary>
+  <description lang="es">Visualiza peliculas procedentes de internet procedentes de servidores publicos y de acceso libre a todos los usuarios.</description>
   <disclaimer>
   [COLOR red]Los propietarios y remitentes de este complemento no alojan ni distribuyen ninguno de los contenidos mostrados por estos complementos ni tienen ninguna afiliación con los proveedores de contenido.[/COLOR]
   [COLOR red]The owners and submitters to this addon do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.[/COLOR]</disclaimer>
