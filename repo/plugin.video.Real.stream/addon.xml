@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.Real.stream"
        name="[COLOR fuchsia]Real Stream[/COLOR]"
-       version="0.7.3"
+       version="0.7.4"
        provider-name="Netai">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -22,6 +22,7 @@
 	-Agregado enlace que abre el explorador de tu mediacenter a una web Proxy gratuita.
 	esta opcion permite ajustar tu kodi via proxy. De esta forma resetear la limitacion
 	de dos horas en el servidor Real.
+	-Agregado servidor Vid.
 	[/COLOR]
     </news>
   <extension point="xbmc.python.pluginsource" library="run.py">
