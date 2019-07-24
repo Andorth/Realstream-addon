@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.Real.stream"
        name="[COLOR fuchsia]Real Stream[/COLOR]"
-       version="0.8.1"
+       version="0.8.2"
        provider-name="Netai">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -18,7 +18,7 @@
 	Cambios en esta version:
 	[/COLOR]
 	[COLOR gold]
-    - Ahora se puede modificar el color de las fuentes tanto para el menu principal, interfaz, titulos de las peliculas.
+	- Solucionado El fallo de enlace no soportado en algunas peliculas.
 	[/COLOR]
     </news>
   <extension point="xbmc.python.pluginsource" library="run.py">
