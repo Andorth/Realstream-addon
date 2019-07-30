@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.Real.stream"
        name="[COLOR fuchsia]Real Stream[/COLOR]"
-       version="0.8.4"
+       version="0.8.5"
        provider-name="Netai">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -18,7 +18,9 @@
 	Cambios en esta version:
 	[/COLOR]
 	[COLOR gold]
-    - Ahora realstream incorpora Series.
+    - Realstream ahora tiene Series.
+	- Ahora se puede ajustar la reproduccion es directa, sin menu de seleccion.
+	- Se accede al script extended info via menu contextual.
 	[/COLOR]
     </news>
   <extension point="xbmc.python.pluginsource" library="run.py">
