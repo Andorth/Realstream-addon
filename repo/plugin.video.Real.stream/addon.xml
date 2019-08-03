@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.Real.stream"
        name="[COLOR fuchsia]Real Stream[/COLOR]"
-       version="0.8.6"
+       version="0.8.7"
        provider-name="Netai">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -17,7 +17,9 @@
 	Cambios en esta version:
 	[/COLOR]
 	[COLOR gold]
-	-Solucionado fallo enlace no encontrado cuando reproducia servidor Vid. 
+	-Arreglado fallo al reproducir trailers aleatorio al entrar al addon.
+	-Corregido el fallo de enlace no encontrado.
+	-Notificacion reproduciendo corregida.
 	[/COLOR]
     </news>
   <extension point="xbmc.python.pluginsource" library="run.py">
