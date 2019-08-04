@@ -5,11 +5,13 @@
        version="0.8.7"
        provider-name="Netai">
   <requires>
+
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.simple.downloader" version="1.9.5"/>
     <import addon="script.module.urlresolver" version="5.0.0"/>
 	<import addon="script.module.resolveurl" version="5.0.0"/>
     <import addon="script.extendedinfo" optional="true"/>
+	<import addon="script.favorites" version="3.2.5" optional="true"/>
     <import addon="plugin.video.youtube" />
 
   </requires>
@@ -18,9 +20,7 @@
 	Cambios en esta version:
 	[/COLOR]
 	[COLOR gold]
-	-Arreglado fallo al reproducir trailers aleatorio al entrar al addon.
-	-Corregido el fallo de enlace no encontrado.
-	-Notificacion reproduciendo corregida.
+	-Retirado el sistema de reproduccion ramdom de trailers al inicio.
 	[/COLOR]
     </news>
   <extension point="xbmc.python.pluginsource" library="run.py">
