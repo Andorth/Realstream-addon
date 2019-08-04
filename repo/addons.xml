@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.Real.stream"
        name="[COLOR fuchsia]Real Stream[/COLOR]"
-       version="0.8.7"
+       version="0.8.8"
        provider-name="Netai">
   <requires>
 
@@ -20,7 +20,7 @@
 	Cambios en esta version:
 	[/COLOR]
 	[COLOR gold]
-	-Retirado el sistema de reproduccion ramdom de trailers al inicio.
+	-Corregido fallo enlace no soportado para el servidor Vid.
 	[/COLOR]
     </news>
   <extension point="xbmc.python.pluginsource" library="run.py">
