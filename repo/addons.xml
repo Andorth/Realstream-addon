@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.Real.stream"
        name="[COLOR fuchsia]Real Stream[/COLOR]"
-       version="0.8.9"
+       version="0.9.0"
        provider-name="Netai">
   <requires>
 
@@ -20,6 +20,7 @@
 	[/COLOR]
 	[COLOR gold]
 	-Corregido fallo enlace no soportado para el servidor Vid.
+	-Correciones menores en el codigo base.
 	[/COLOR]
     </news>
   <extension point="xbmc.python.pluginsource" library="run.py">
