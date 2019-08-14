@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.Real.stream"
        name="[COLOR fuchsia]Real Stream[/COLOR]"
-       version="0.9.1"
+       version="0.9.2"
        provider-name="Netai">
   <requires>
 
@@ -20,6 +20,8 @@
 	[/COLOR]
 	[COLOR gold]
 	-Añadido ver trailer desde el menu contextual.
+	-Agregadas categoria Artes Marciales.
+	-Agregada Categoria Cine Clasico.
 	[/COLOR]
     </news>
   <extension point="xbmc.python.pluginsource" library="run.py">
