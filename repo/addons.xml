@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.Real.stream"
        name="[COLOR fuchsia]Real Stream[/COLOR]"
-       version="0.9.2"
+       version="0.9.3"
        provider-name="Netai">
   <requires>
 
@@ -19,9 +19,8 @@
 	Cambios en esta version:
 	[/COLOR]
 	[COLOR gold]
-	-Añadido ver trailer desde el menu contextual.
-	-Agregadas categoria Artes Marciales.
-	-Agregada Categoria Cine Clasico.
+     -Cambios menores en el codigo base.
+	 -Reparada la compatibilidad de enlace al servidor de origen.
 	[/COLOR]
     </news>
   <extension point="xbmc.python.pluginsource" library="run.py">
