@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.Real.stream"
        name="[COLOR fuchsia]Real Stream[/COLOR]"
-       version="0.9.3"
+       version="0.9.4"
        provider-name="Netai">
   <requires>
 
