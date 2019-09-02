@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.Real.stream"
        name="[COLOR fuchsia]Real Stream[/COLOR]"
-       version="0.9.6"
+       version="0.9.7"
        provider-name="Netai">
   <requires>
 
@@ -20,7 +20,7 @@
 	[/COLOR]
 	[COLOR gold]
      -Cambios menores en el codigo base.
-	 -Cambios menores en el menu series.
+	 -Arreglada la seccion tutoriales.
 	[/COLOR]
     </news>
   <extension point="xbmc.python.pluginsource" library="run.py">
