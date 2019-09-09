@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.Real.stream"
        name="[COLOR fuchsia]Real Stream[/COLOR]"
-       version="1.0.0"
+       version="1.0.1"
        provider-name="Netai/Jose">
   <requires>
 
@@ -19,9 +19,7 @@
 	Cambios en esta version:
 	[/COLOR]
 	[COLOR gold]
-     -Cambios menores en el codigo base.
-	 -Modificada la fincion que chequea la version instalada.
-	 -Cambios en el check de la llave licencia.
+     -Agregada al menu series, Series Retro.
 	[/COLOR]
     </news>
   <extension point="xbmc.python.pluginsource" library="run.py">
