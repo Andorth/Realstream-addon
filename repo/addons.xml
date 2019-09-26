@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.Real.stream"
        name="[COLOR fuchsia]Real Stream[/COLOR]"
-       version="1.0.2"
+       version="1.0.3"
        provider-name="Netai/Jose">
   <requires>
 
@@ -19,7 +19,7 @@
 	Cambios en esta version:
 	[/COLOR]
 	[COLOR gold]
-     -Agregados los buscadores de Peliculas y series al menu principal.
+     -Agregadas Sinopsis en Estrenos y Fondos.
 	[/COLOR]
     </news>
   <extension point="xbmc.python.pluginsource" library="run.py">
