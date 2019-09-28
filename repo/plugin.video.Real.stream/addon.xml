@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.Real.stream"
        name="[COLOR fuchsia]Real Stream[/COLOR]"
-       version="1.0.5"
+       version="1.0.6"
        provider-name="Netai/Jose">
   <requires>
   
@@ -18,7 +18,8 @@
 	Cambios en esta version:
 	[/COLOR]
 	[COLOR gold]
-     -Suprimida la llave licencia.
+     -Corregida la llave.
+	 -1 fase de estructuracion de base de datos completada.
 	[/COLOR]
     </news>
   <extension point="xbmc.python.pluginsource" library="run.py">
