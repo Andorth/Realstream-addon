@@ -92,7 +92,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 </addon>
 
 <addon id="service.subtitles.Realopensubtitles"
-       name="RealOpenSubtitles"
+       name="Real OpenSubtitles"
        version="0.0.1"
        provider-name="amet, Netai, opensubtitles">
   <requires>
