@@ -1,96 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addons>
-<addon id="plugin.video.Real.stream"
-       name="[COLOR fuchsia]Real Stream[/COLOR]"
-       version="1.0.7"
-       provider-name="Netai/Jose">
-  <requires>
-
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.simple.downloader" version="1.9.5"/>
-    <import addon="script.module.urlresolver" version="5.0.0"/>
-	<import addon="script.module.resolveurl" version="5.0.0"/>
-    <import addon="script.extendedinfo" optional="true"/>
-    <import addon="plugin.video.youtube" optional="true"/>
-
-  </requires>
-    <news>
-	[COLOR orange]
-	Cambios en esta version:
-	[/COLOR]
-	[COLOR gold]
-     -Agregadas Sinopsis en Estrenos y Fondos.
-	 - Completada fase 2
-	[/COLOR]
-    </news>
-  <extension point="xbmc.python.pluginsource" library="run.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-  <summary lang="es">Realstream</summary>
-  <description lang="es">Visualiza peliculas desde internet procedentes de servidores publicos y de acceso libre a todos los usuarios.</description>
-  <disclaimer>
-  [COLOR blue]Los propietarios y los usuarios de este complemento, no alojan, ni distribuyen, ninguno de los contenidos mostrados por este complemento. Este complemento no permite la descarga de ningun contenido. Y solo muestra el contenido via Streaming. Este complemento es privado, y de acceso restringido. Este complemento, no es de pago. Ni tiene ninguna subcripcion. Estos contenidos son de acceso publico en internet, y se encuentran en servidores de terceros.[/COLOR]</disclaimer>
-  <platform>all</platform>
-  <license>GNU GPL v3</license>
-  <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="repository.jsergio" name="jsergio repo" version="1.0.4" provider-name="jsergio">
-	<extension point="xbmc.addon.repository" name="jsergio repo">
-        <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Repo for jsergio Add-ons</summary>
-		<description>Repo for jsergio Add-ons</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="repository.Realstream" name="[COLOR orange]Realstream[/COLOR] Repo" version="1.2.5" provider-name="Netai">
-
-    <extension point="xbmc.addon.repository" name="Realstream-repo">
-		<info>https://raw.githubusercontent.com/Andorth/Realstream-Repo/master/repo/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/Andorth/Realstream-Repo/master/repo/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/Andorth/Realstream-Repo/master/repo/</datadir>
-	</extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Repositorio Real Stream</summary>
-        <description>Soporte del addon Real Stream.</description>
-        <disclaimer>Este addon es gratuito, no pagues por el.</disclaimer>
-        <platform>all</platform>
-    </extension>
-</addon>
-
-<addon id="repository.xbmchub" name="TVADDONS.CO Add-on Repository" version="3.0.0" provider-name="tvaddons">
-	<extension point="xbmc.addon.repository" name="TVADDONS.CO Add-on Repository">
-	<dir>
-		<info compressed="false">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml</info>
-		<checksum>https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/</datadir>
-	</dir>
-
-    <dir>
-		<info compressed="false">https://github.com/tvaddonsco/tva-release-repo/raw/master/addons.xml</info>
-		<checksum>https://github.com/tvaddonsco/tva-release-repo/raw/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://github.com/tvaddonsco/tva-release-repo/raw/master/</datadir>
-    </dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Unofficial Kodi Addons from TVADDONS.CO</summary>
-		<description>Unofficial Kodi Addons from the TVADDONS.CO Add-on Repository. Please visit www.tvaddons.co for support!
-
-Kodi is a registered trademark of the XBMC Foundation. We are not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</description>
-         <disclaimer>TVADDONS.CO did not make all the add-ons in this repository and is not responsible for their content.</disclaimer>
-		<platform>all</platform>
-                <forum>https://www.tvaddons.co/forums</forum>
-                <website>https://www.tvaddons.co</website>
-	</extension>
-</addon>
-
 <addon id="service.subtitles.Realopensubtitles"
        name="RealOpenSubtitles"
        version="0.0.1"
@@ -141,7 +49,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	<description lang="tr">Her gün eklenen, pek çok dildeki binlerce film ve dizi altyazısı. Kaynağından ücretsiz indirme, API desteği ve milyonlarca kullanıcı.</description>
 	<description lang="uz">Film va TV Taglavhalari ko'p tillarda, minglab tarjima qilingan taglavhalar har kuni tizimga yuklanadi. Bepul resursdan yuklab oling, API qo'llaydi, millionlab foydalanuvchilar.</description>
 	<description lang="zh">多语种的电影及剧集字幕，每日更新千余条翻译好的字幕。免费下载，提供API接口，已拥有上百万的用户。</description>
-    <disclaimer>Users need to provide OpenSubtitles.org username and password in add-on configuration</disclaimer>
+    <disclaimer>Users need to provide OpenSubtitles.org username and password in add-on configuration</disclaimer>                                               
 	<news>
 v5.0.16 (2016-11-26) by opensubtitles
 - Changed descriptions, icons, fanart... (by opensubtitles)
@@ -154,15 +62,14 @@ v5.0.15 (2016-11-26) by amet
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
     <forum>https://forum.opensubtitles.org/viewtopic.php?f=8&amp;t=15847</forum>
     <website>http://www.opensubtitles.org</website>
-    <email>admin [at] opensubtitles {dot} org</email>
+    <email>admin [at] opensubtitles {dot} org</email>                                               
 	<assets>
 	    <icon>resources/media/os_logo_512x512.png</icon>
-	    <fanart>resources/media/os_fanart.jpg</fanart>
+	    <fanart>resources/media/os_fanart.jpg</fanart>    
 		<screenshot>resources/media/screenshot_1.jpg</screenshot>
 		<screenshot>resources/media/screenshot_2.jpg</screenshot>
-		<screenshot>resources/media/screenshot_3.jpg</screenshot>
+		<screenshot>resources/media/screenshot_3.jpg</screenshot>				
 	</assets>
-    <source>https://github.com/opensubtitles/service.subtitles.opensubtitles</source>
+    <source>https://github.com/opensubtitles/service.subtitles.opensubtitles</source>    
   </extension>
 </addon>
-</addons>
