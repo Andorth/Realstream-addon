@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.Real.stream"
        name="[COLOR fuchsia]Real Stream[/COLOR]"
-       version="1.1.2"
+       version="1.1.3"
        provider-name="Netai/Jose">
   <requires>
   
     <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.simple.downloader" version="1.9.5"/>
     <import addon="script.module.urlresolver" version="5.0.0"/>
 	<import addon="script.module.resolveurl" version="5.0.0"/>
     <import addon="script.extendedinfo" optional="true"/>
@@ -18,7 +17,7 @@
 	Cambios en esta version:
 	[/COLOR]
 	[COLOR gold]
-	- Contador de visitas.
+	- Agregado nuevo sub menu para series.
 	[/COLOR]
     </news>
   <extension point="xbmc.python.pluginsource" library="run.py">
@@ -26,9 +25,9 @@
   </extension>
   <extension point="xbmc.addon.metadata">
   <summary lang="es">Realstream</summary>
-  <description lang="es">Visualiza peliculas desde internet procedentes de servidores publicos y de acceso libre a todos los usuarios.</description>
+  <description lang="es">Visualiza contenido en streaming proveniente de internet.</description>
   <disclaimer>
-  [COLOR blue]Los propietarios y los usuarios de este complemento, no alojan, ni distribuyen, ninguno de los contenidos mostrados por este complemento. Este complemento no permite la descarga de ningun contenido. Y solo muestra el contenido via Streaming. Este complemento es privado, y de acceso restringido. Este complemento, no es de pago. Ni tiene ninguna subcripcion. Estos contenidos son de acceso publico en internet, y se encuentran en servidores de terceros.[/COLOR]</disclaimer>
+  [COLOR blue]Nosotros no alojamos ningun contenido en este addon, todo el contenido proviene de internet. Disponible para todo el mundo de forma publica y gratuita.[/COLOR]</disclaimer>
   <platform>all</platform>
   <license>GNU GPL v3</license>
   <platform>all</platform>
