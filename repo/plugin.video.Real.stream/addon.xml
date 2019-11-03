@@ -17,9 +17,7 @@
 	Cambios en esta version:
 	[/COLOR]
 	[COLOR gold]
-	- Eliminado Menu peliculas.
-	- Eliminado Buscador Peliculas.
-	
+	- Agregado nuevo sub menu para series.
 	[/COLOR]
     </news>
   <extension point="xbmc.python.pluginsource" library="run.py">
