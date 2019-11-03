@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<settings>
+
+	<category label="Entorno visual">
+	<setting id="iconos" type="bool" label="Mostrar iconos categorias Modernos" default="true"/>
+    <setting type="lsep" label="" />
+	<setting id="Fontcolor" type="labelenum" label="Seleccion de color para los Titulos" default="white" values="white|gold|red||deepskyblue|skyblue|fuchsia|lime|aqua|yellow|orange|deeppink"/>
+	<setting id="MenuColor" type="labelenum" label="Seleccion de color para el Menu" default="orange" values="white|gold|red||deepskyblue|skyblue|fuchsia|lime|aqua|yellow|orange|deeppink"/>
+	<setting id="videos_event" type="bool" label="Activar Video Eventos" default="true" visible="true"/>
+	</category>
+	
+	<category label="General">
+	<setting id="selecton" type="bool" label="Activar menu select para reproducir pelicula." default="false"/>
+	<setting id="RealStream_Settings" type="bool" label="Mostrar ajustes en el menu." default="true"/>
+	<setting id="favcopy" type="bool" label="Activar agradecimientos al inicio de Favoritos Real stream." default="false"/>
+	<setting id="Forceupdate" type="bool" visible="true" label="Activar para auto buscar actualizaciones disponibles" default="false"/>
+	<setting id="aviso" type="bool" label="Mostrar Informacion entrada." default="true"/>
+	<setting id="notificar" type="bool" label="Activar notificaciones" default="true"/>
+	<setting id="mostrar_cat" type="bool" label="Agregar categorias en el menu principal" default="false"/>
+	<setting id="activar" type="bool" label="Activar Realstream" default="true"/>
+	<setting id="anticopia" type="bool" label="¿Dependencias ExtendedInfo,ResolveURL,URLResolver Instaladas?" visible="false" default="true"/>
+	<setting id="licencia_addon" type="text" label="Llave:" visible="true" default="Realstream"/>
+	
+	
+	</category>
+	
+	<category label="Mostrar Resolvers">
+	<setting id="Resolver_Settings" type="bool" label="Mostrar ajustes De los Resolvers en el menu." default="true"/>
+	<setting id="copyright" type="text" visible="false" default="Real.stream"/>
+	</category>
+	
+</settings>
