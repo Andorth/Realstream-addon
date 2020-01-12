@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.Real.stream"
        name="[COLOR fuchsia]Real Stream[/COLOR]"
-       version="1.40"
+       version="1.41"
        provider-name="Grupo Netai">
   <requires>
 
@@ -19,6 +19,7 @@
 	[/COLOR]
 	[COLOR gold]
 	- Realstream ahora necesita Registro de usuario individual.
+	- Soporte multi enlace de servidores.
 	[/COLOR]
     </news>
   <extension point="xbmc.python.pluginsource" library="run.py">
