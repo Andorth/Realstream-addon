@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.Real.stream"
        name="[COLOR fuchsia]Real Stream[/COLOR]"
-       version="1.45"
+       version="1.46"
        provider-name="Grupo Netai">
 
 
@@ -18,7 +18,7 @@
 	[COLOR gold]
 	- Realstream ahora necesita Registro de usuario individual.
 	- Soporte multi enlace de servidores.
-	- Anulada la dependencia de URLRESOLVER de TV ADDONS Adios sonrisas adios !!
+	- Agregadas nuevas categorias de Peliculas.
 	[/COLOR]
     </news>
   <extension point="xbmc.python.pluginsource" library="run.py">
