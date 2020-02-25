@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.Real.stream"
        name="[COLOR fuchsia]Real Stream[/COLOR]"
-       version="1.52"
+       version="1.53"
        provider-name="Grupo Netai">
 
 
@@ -21,6 +21,7 @@
 	- Soporte multi enlace de servidores.
 	- Agregadas nuevas categorias de Peliculas.
 	- Corregido el resolve de uptobox.
+	- Agregado nuevo codificado y encriptado del source base.
 	[/COLOR]
     </news>
   <extension point="xbmc.python.pluginsource" library="run.py">
