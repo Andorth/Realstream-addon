@@ -38,26 +38,6 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.Realstream.tv"
-       name="Realstream Tv"
-       version="0.10"
-       provider-name="Netai">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="plugin.video.f4mTester"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Zona TV</summary>
-    <language>es</language>
-    <description lang="en">Visualiza contenido de Television IPTV España procedente de internet. Requires F4M Tester</description>
-     <platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="plugin.video.youtube" name="YouTube" version="6.5.1" provider-name="anxdpanic, bromix">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
