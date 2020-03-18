@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.Real.stream"
        name="[COLOR fuchsia]Real Stream[/COLOR]"
-       version="1.58"
+       version="1.59"
        provider-name="Grupo Netai">
 
 
@@ -11,6 +11,21 @@
 	<import addon="script.module.resolveurl" version="5.0.0"/>
     <import addon="script.extendedinfo" optional="true"/>
   </requires>
+    <dir>
+  		<info>https://raw.githubusercontent.com/Andorth/Realstream-Repo/master/repo/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/Andorth/Realstream-Repo/master/repo/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/Andorth/Realstream-Repo/master/repo/</datadir>
+ </dir>
+    <dir>
+        <info compressed="false">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml</info>
+        <checksum>https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/</datadir>
+  </dir>
+  <dir>
+        <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+</dir>
     <news>
 	[COLOR orange]
 	Cambios en esta version:
