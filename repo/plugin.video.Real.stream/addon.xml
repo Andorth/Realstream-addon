@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.Real.stream"
        name="[COLOR fuchsia]Real Stream[/COLOR]"
-       version="2.06"
+       version="2.07"
        provider-name="Grupo Netai">
 
 
@@ -34,12 +34,10 @@
 	Cambios en esta version:
 	[/COLOR]
 	[COLOR gold]
-	- Realstream ahora necesita Registro de usuario individual.
-	- Soporte multi enlace de servidores.
-	- Agregadas nuevas categorias de Peliculas.
-	- Anulado Uptobox de lista de servidores.
-	- Agregado el script.urlresolver
-	- Agregado nuevo codificado y encriptado del source base.
+	-Agregado el check de dependencias del addon.
+	-Agregado codificacion interna del core.
+	-restructuracion y agilizacion de carga.
+	-compatibilidad con Scripts ResolveURL y URLResolver.
 	[/COLOR]
     </news>
   <extension point="xbmc.python.pluginsource" library="run.py">
