@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.Real.stream"
        name="[COLOR fuchsia]Real Stream[/COLOR]"
-       version="2.07"
+       version="2.08"
        provider-name="Grupo Netai">
 
 
@@ -39,6 +39,7 @@
 	-Agregado codificacion interna del core.
 	-restructuracion y agilizacion de carga.
 	-compatibilidad con Scripts ResolveURL y URLResolver.
+	-Sino estan instalados lo avisara pero no dara error de registro.
 	[/COLOR]
     </news>
   <extension point="xbmc.python.pluginsource" library="run.py">
