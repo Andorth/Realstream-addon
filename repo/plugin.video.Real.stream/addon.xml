@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.Real.stream"
        name="[COLOR fuchsia]Real Stream[/COLOR]"
-       version="2.30"
+       version="2.30a"
        provider-name="Grupo Netai">
 
 
@@ -28,9 +28,9 @@
 	- Realstream ahora necesita Registro de usuario individual.
 	- Soporte multi enlace de servidores.
 	- Agregadas nuevas categorias de Peliculas.
+	- Anulado Uptobox de lista de servidores.
+	- Agregado el script.urlresolver
 	- Agregado nuevo codificado y encriptado del source base.
-	- Eliminado el check de dependencias
-	- Auto eliminado de script Gdrive, Sonrisas.
 	[/COLOR]
     </news>
   <extension point="xbmc.python.pluginsource" library="run.py">
