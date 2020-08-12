@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.Real.stream"
        name="[COLOR fuchsia]Real Stream[/COLOR]"
-       version="2.70"
+       version="2.71"
        provider-name="Grupo Netai">
 
   <requires>
@@ -22,6 +22,10 @@
     <news>
 	[COLOR orange]
 	Cambios en esta version:
+	
+		-Adaptacion al addon dependencia Gdrive
+		-Posibilidad de desactivarlo para trabajar con Los resolvers de siempre en el server drive.
+		
 	[/COLOR]
 	[COLOR gold]
 	Nosotros ni nuestros usuarios alojamos contenido protegido por derechos de autor. Solamente enlazamos contenido de sitios publicos de internet. 
