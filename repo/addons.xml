@@ -27,7 +27,8 @@
 		- Adaptado al Addon Gdrive para resolver los enlaces del servidor Team.
 		- Posibilidad de desactivar el addon Gdrive desde ajustes del addon.
 		- Agregada la seccion 4K.
-		- Ahora Realstream puede resolver los enlaces Team sin necesidad de la dependencia Gdrive.
+		- Posibilidad de activar o desactivar el Addon Gdrive
+		- Resolver los enlaces drive con y sin Gdrive.
 
 	[/COLOR]
 	[COLOR gold]
