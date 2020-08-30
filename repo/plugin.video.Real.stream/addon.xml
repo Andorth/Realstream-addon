@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.Real.stream"
        name="[COLOR fuchsia]Real Stream[/COLOR]"
-       version="3.20"
+       version="3.25"
        provider-name="Grupo Netai">
 
   <requires>
@@ -21,13 +21,10 @@
 
     <news>
 	[COLOR orange]
-	Cambios en esta version:
+	Cambios en esta version: 3.25
 	
-		- Adaptado al Addon Gdrive para resolver los enlaces del servidor Team.
-		- Posibilidad de desactivar el addon Gdrive desde ajustes del addon.
-		- Agregada la seccion 4K.
-		- Posibilidad de activar o desactivar el Addon Gdrive
-		- Resolver los enlaces drive con y sin Gdrive.
+		- Agregado enlace a Favoritos de Kodi desde el menu principal.
+		- Agregadas las series por Temporadas.
 		
 	[/COLOR]
 	[COLOR gold]
