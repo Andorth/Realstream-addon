@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.Real.stream"
        name="[COLOR fuchsia]Real Stream[/COLOR]"
-       version="3.37"
+       version="3.40"
        provider-name="Grupo Netai">
 
   <requires>
@@ -22,10 +22,10 @@
 
     <news>
 	[COLOR orange]
-	Cambios en esta version: 3.35
+	Cambios en esta version: 3.25
 
-	- Hemos recuperado el sistema de Login.
-	- corregidos bugs menores en el codigo base.
+		- Agregado enlace a Favoritos de Kodi desde el menu principal.
+		- Agregadas las series por Temporadas.
 
 	[/COLOR]
 	[COLOR gold]
