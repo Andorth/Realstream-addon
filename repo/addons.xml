@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
 <addon id="plugin.video.Real.stream"
-       name="[COLOR fuchsia]Real Stream[/COLOR]"
-       version="3.60"
+       name="[COLOR fuchsia]Realstream[/COLOR]"
+       version="3.65"
        provider-name="Grupo Netai">
 
   <requires>
@@ -11,6 +11,7 @@
 	<import addon="script.module.urlresolver" version="5.0.00"/>
 	<import addon="script.module.resolveurl" version="5.0.00"/>
     <import addon="script.extendedinfo" optional="true"/>
+	<import addon="plugin.video.torrentin" version="0.6.1" optional="true"/>
 
   </requires>
 
@@ -22,10 +23,10 @@
 
     <news>
 	[COLOR orange]
-	Cambios en esta version: 3.55
+	Cambios en esta version: 3.65
 
-		- Agregado enlace a Favoritos de Kodi desde el menu principal.
-		- Agregadas las series por Temporadas.
+	-Admite y reproduce enlaces torrent!
+
 
 	[/COLOR]
 	[COLOR gold]
