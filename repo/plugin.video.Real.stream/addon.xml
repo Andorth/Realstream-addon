@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.Real.stream"
        name="[COLOR fuchsia]Realstream[/COLOR]"
-       version="3.70"
+       version="3.71"
        provider-name="Grupo Netai">
 
   <requires>
@@ -10,7 +10,7 @@
 	<import addon="script.module.urlresolver" version="5.0.00"/>
 	<import addon="script.module.resolveurl" version="5.0.00"/>
     <import addon="script.extendedinfo" optional="true"/>
-	<import addon="plugin.video.torrentin" version="0.6.1" optional="true"/>
+	<import addon="plugin.video.torrentin" version="0.6.2" optional="true"/>
 
   </requires>
 
@@ -22,9 +22,9 @@
 
     <news>
 	[COLOR orange]
-	Cambios en esta version: 3.65
+	Cambios en esta version: 3.71
 	
-	-Admite y reproduce enlaces torrent!
+	Cambios en el sistema de login de usuarios.
 		
 		
 	[/COLOR]
