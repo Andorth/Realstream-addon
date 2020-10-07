@@ -2,16 +2,14 @@
 <addons>
 <addon id="plugin.video.Real.stream"
        name="[COLOR fuchsia]Realstream[/COLOR]"
-       version="3.71"
+       version="4.01"
        provider-name="Grupo Netai">
 
   <requires>
 
     <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.urlresolver" version="5.0.00"/>
 	<import addon="script.module.resolveurl" version="5.0.00"/>
     <import addon="script.extendedinfo" optional="true"/>
-	<import addon="plugin.video.torrentin" version="0.6.2" optional="true"/>
 
   </requires>
 
@@ -23,11 +21,14 @@
 
     <news>
 	[COLOR orange]
-	Cambios en esta version: 3.71
+	Cambios en esta version: 4.01
 
 	Cambios en el sistema de login de usuarios.
-
-
+	modificado el menu peliculas.
+	modificado el menu series.
+	eliminada la dependencia URLresolver
+	eliminados los torrents.
+	agregada la seccion herramientas.
 	[/COLOR]
 	[COLOR gold]
 	Nosotros ni nuestros usuarios alojamos contenido protegido por derechos de autor. Solamente enlazamos contenido de sitios publicos de internet.
