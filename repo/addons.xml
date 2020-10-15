@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.Real.stream"
        name="[COLOR fuchsia]Realstream[/COLOR]"
-       version="4.01"
+       version="4.02"
        provider-name="Grupo Netai">
 
   <requires>
@@ -21,14 +21,9 @@
 
     <news>
 	[COLOR orange]
-	Cambios en esta version: 4.01
+	Cambios en esta version: 4.02
 
-	Cambios en el sistema de login de usuarios.
-	modificado el menu peliculas.
-	modificado el menu series.
-	eliminada la dependencia URLresolver
-	eliminados los torrents.
-	agregada la seccion herramientas.
+	Se arregla un fallo que permitia ver el contenido de peliculas sin estar registrado.
 	[/COLOR]
 	[COLOR gold]
 	Nosotros ni nuestros usuarios alojamos contenido protegido por derechos de autor. Solamente enlazamos contenido de sitios publicos de internet.
