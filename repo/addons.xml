@@ -33,6 +33,7 @@
 
     <provides>video</provides>
   </extension>
+
   <extension point="xbmc.addon.metadata">
   <summary lang="es">Realstream</summary>
   <description lang="es">[COLOR white]Este addon es privado, y gratuito. No alojamos ningun contenido dentro del mismo. Solo mostramos contenido de sitios publicos de acceso libre en internet. No aceptamos donaciones ni pagos de ningun tipo. No pagues por este addon.[/COLOR]</description>
@@ -41,6 +42,10 @@
   <platform>all</platform>
   <license>GNU GPL v3</license>
   <platform>all</platform>
+  	  <assets>
+		<icon>icon.gif</icon>
+		<fanart>fanart.jpg</fanart>
+	  </assets>
   </extension>
 </addon>
 
