@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.Real.stream"
        name="[COLOR fuchsia]Realstream[/COLOR]"
-       version="4.04"
+       version="4.05"
        provider-name="Grupo Netai">
 
   <requires>
@@ -21,7 +21,7 @@
 
     <news>
 	[COLOR orange]
-	Cambios en esta version: 4.04
+	Cambios en esta version: 4.05
 
 	Se arregla un fallo que permitia ver el contenido de peliculas sin estar registrado.
 	[/COLOR]
